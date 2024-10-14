@@ -45,12 +45,17 @@
 # for i1, i2 in zip(lista1, lista2):
 #     print(i1, i2)
 
-mi_lista = [10, "Python", False, [4, 5, 6]]
-print(mi_lista[0] + 5) # Operación con un entero -> 15
-print(mi_lista[1].upper()) # Convertir la cadena a mayúsculas -> 'PYTHON'
-print(mi_lista[2] or True) # Operación lógica -> True
-if "Python" in mi_lista:
-    print("La palabra 'Python' está en la lista.") # Resultado: True
-mi_lista[3][0] = 100 # Cambiamos el primer elemento de la lista anidada por 100.
-print(mi_lista)
-print(mi_lista[3][1]) # Acceder al segundo elemento de la lista anidada -> 5
+# mi_lista = [10, "Python", False, [4, 5, 6]]
+# print(mi_lista[0] + 5) # Operación con un entero -> 15
+# print(mi_lista[1].upper()) # Convertir la cadena a mayúsculas -> 'PYTHON'
+# print(mi_lista[2] or True) # Operación lógica -> True
+# if "Python" in mi_lista:
+#     print("La palabra 'Python' está en la lista.") # Resultado: True
+# mi_lista[3][0] = 100 # Cambiamos el primer elemento de la lista anidada por 100.
+# print(mi_lista)
+# # print(mi_lista[3][1]) # Acceder al segundo elemento de la lista anidada -> 5
+
+# SENTENCIA MATCH: es como un switch
+# match:
+#     case 1:
+#     case _: # default
