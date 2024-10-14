@@ -20,8 +20,12 @@ public class Main {
 		
 		// System.out.println(tree.isStrict());
 		
-		System.out.println(tree.treeHeight());
+		// System.out.println(tree.treeHeight());
 
+		// System.out.println(tree.countNodes());
+		System.out.println(tree.sum());
+		System.out.println(tree.sumPares());
+		
 	}
 
 }

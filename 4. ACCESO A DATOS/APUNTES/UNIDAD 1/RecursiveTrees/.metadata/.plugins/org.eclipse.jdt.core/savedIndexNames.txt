@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+C:\Users\crist\Documents\CFGS DAM\2DAM\4. ACCESO A DATOS\APUNTES\UNIDAD 1\RecursiveTrees\.metadata\.plugins\org.eclipse.jdt.core
+1583510816.index
+1614246185.index
+4044415774.index
+3919157161.index
+1865797976.index
