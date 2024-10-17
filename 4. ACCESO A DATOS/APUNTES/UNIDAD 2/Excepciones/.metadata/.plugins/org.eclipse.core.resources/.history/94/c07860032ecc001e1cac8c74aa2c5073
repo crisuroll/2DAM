@@ -1,0 +1,39 @@
+import java.util.PriorityQueue;
+import java.util.Queue;
+import java.util.Scanner;
+
+/**
+ * Clase Ej03. Escribe un programa en Java que dado una cola, pregunte al usuario por un número k 
+ * (asegúrate que k es mayor que 0 y menor que el tamaño de la cola, y si no es así, vuelve a pedir 
+ * otro número). Después, invierte los primeros k elementos de dicha cola. Imprime la cola al 
+ * principio y al final para comparar el resultado.
+ */
+public class Ej03 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int k;
+		Queue<Integer> uwu = new PriorityQueue<Integer>();
+		uwu.add(2);
+		uwu.add(5);
+		uwu.add(3);
+		
+		System.out.println("Introduce un número: ");
+		int k = sc.nextInt();
+		
+		do {
+			System.out.println("Introduce un número válido: ");
+			int k = sc.nextInt();
+		} while (k < 0 && k > uwu.size());
+
+		int numQ = 0;
+		int sum = 0;
+		while(!uwu.isEmpty()) {
+			numQ = uwu.element();
+			uwu.poll();
+			sum = sum + numQ;
+		}
+		System.out.println(sum);
+	}
+
+}

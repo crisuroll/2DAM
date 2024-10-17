@@ -1,0 +1,17 @@
+/**
+ * Clase A1.
+ * @author crisuroll
+ */
+public class A1 {
+	
+	private int num;
+	private A2 obj1;
+	private A3 obj2;
+	
+	public A1 (int num, A2 obj1, A3 obj2) {
+		this.num = num;
+		this.obj1 = obj1;
+		this.obj2 = obj2;
+	}
+
+}
