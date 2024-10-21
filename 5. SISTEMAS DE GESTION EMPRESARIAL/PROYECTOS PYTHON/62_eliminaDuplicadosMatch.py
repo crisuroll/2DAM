@@ -17,7 +17,6 @@ match lista:
             if sublista not in lista2:
                 lista2.append(sublista)
         lista = lista2
+        print("Lista final:", lista)
     case _:
         print("No hay listas duplicadas.")
-
-print("Lista final:", lista)
