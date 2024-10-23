@@ -59,3 +59,67 @@
 # match:
 #     case 1:
 #     case _: # default
+
+# # f-strings
+# nombre = "Cris"
+# edad = 20
+# print(f"Hola {nombre} tienes {edad} años")
+
+# # tuplas
+# tupla_vacia = ()
+
+# tupla = (3, 4, 5)
+
+# if len(tupla) == 1:
+#     print(f"Un número: {tupla[0]}")
+# elif len(tupla) == 2:
+#     print(f"La suma de {tupla[0]} y {tupla[1]} es: ", tupla[0] + tupla[1])
+# elif len(tupla) == 3:
+#     print(f"El producto de {tupla[0]}, {tupla[1]} y {tupla[2]} es: ", tupla[0] * tupla[1] * tupla[2])
+# else:
+#     print("Excede el tamaño.")
+
+# conjuntos: colección no ordenada y sin elementos repetidos.
+
+# diccionarios: parejas clave-valor. hashmap
+dic = {
+    "Nombre":"Sierra",
+    "Edad":25
+}
+
+dic2 = ([
+    ("Nombre", "Sierra"),
+    ("Edad", 25)
+])
+
+dic["Nombre"] = "Santi"
+dic["Curso"] = "2ºDAM"
+print(dic)
+
+for i in dic: #imprime las key
+    print(i)
+for i in dic: #imprime los value
+    print(dic[i])
+
+for i, j in dic.items():
+    print(i, j)
+
+# anidar diccionarios
+a = {"a":1, "b":2}
+b = {"a":1, "b":2}
+# clear() elimina el diccionario entero
+# get() consulta el value de una key. el segundo parametro es opcional y es lo que devuelve si no se encuentra la key
+print(dic.get("Cris", "No encontrado"))
+# items() devuelve una lista con los keys y values del diccionario
+print(dic.items())
+# keys() devuelve una lista con todas las claves del diccionario
+# values() devuelve una lista con todos los values del diccionario
+# pop() busca una key y la elimina. el segundo parametro es opcional y es lo que devuelve si no se encuentra la key
+# popitem() elimina el ultimo elemento del diccionario
+# update(<obj>) tiene como entrada otro diccionario. actualiza los values, y si alguna key no está la añade.
+d1 = {"a":1, "b":2}
+d2 = {"a":0, "d":400}
+d1.update(d2)
+print(d1)
+# list(diccionario) devuelve una lista con todas las claves usadas en el orden de inserción. para ordenar se usa sorted(diccionario)
+# in se usa para ver si una clave esta en el diccionario
