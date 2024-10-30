@@ -252,6 +252,21 @@ public class BST {
 			equal = false;
 		}
 		return equal;
+		
+		/* OTRA FORMA DE HACERLO
+		 * 
+		 * if (_current1 == null && _current2 == null) {
+		 *		return equal;
+		 * }
+		 * 
+		 * if (_current1 == null || _current2 == null) {
+		 * 		return false;
+		 * }
+		 * 
+		 * return (_current1.value == current2.value) &&
+		 * 			equal(_current1.left, _current2.left) &&
+		 * 			equal(_current1.right, _current2.right);
+		 */
 	}
 	
 	/*
