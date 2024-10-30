@@ -28,7 +28,7 @@ public class ArrayListAsStack <T> {
 		if (pila.isEmpty()) {
 			System.out.println("Error. La pila está vacía.");
 		} else {
-			pila.remove(a.size()-1);
+			pila.remove(pila.size()-1);
 		}
 	}
 	

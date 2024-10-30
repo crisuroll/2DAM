@@ -25,23 +25,23 @@ public class Queues<T> {
 	}
 	
 	public T peek() {
-		T elem = null;
+		T cima = null;
 		if(!empty()) {
-			elem = this.cola.getFirst();
+			cima = this.cola.getFirst();
 		} else {
 			throw new IllegalStateException ("ERROR. La cola está vacía.");
 		}
-		 return elem;
+		 return cima;
 	}
 	
 	public T remove() {
-		T elem = null;
+		T del = null;
 		if(!empty()) {
-			elem = this.cola.removeFirst();
+			del = this.cola.removeFirst();
 		} else {
 			throw new IllegalStateException ("ERROR. La cola está vacía.");
 		}
-		 return elem;
+		 return del;
 	}
 	
 	public boolean empty() {

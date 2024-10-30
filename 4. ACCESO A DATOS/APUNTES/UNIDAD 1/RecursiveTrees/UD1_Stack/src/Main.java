@@ -6,7 +6,7 @@ public class Main {
 		
 		ArrayListAsStack<Integer> pila = new ArrayListAsStack<>();
 		pila.push(5);
-		
+		pila.remove();
 		
 
 	}
