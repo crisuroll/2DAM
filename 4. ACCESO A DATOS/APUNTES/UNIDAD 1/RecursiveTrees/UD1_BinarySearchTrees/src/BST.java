@@ -237,36 +237,17 @@ public class BST {
 	}
 	
 	public boolean equalRecursive(Node _current1, Node _current2) {
-		boolean equal = true;
-		if (_current1 == null && _current2 == null) {
-			return equal;
-		}
-		
-		if ((_current1 == null && _current2 != null) || (_current1 != null && _current2 == null)) {
-			return false;
-		}
-		
-		if (_current1.value == _current2.value) {
-			equal = equalRecursive(_current1.left, _current2.left) && equalRecursive(_current1.right, _current2.right);
-		} else {
-			equal = false;
-		}
-		return equal;
-		
-		/* OTRA FORMA DE HACERLO
-		 * 
-		 * if (_current1 == null && _current2 == null) {
-		 *		return equal;
-		 * }
-		 * 
-		 * if (_current1 == null || _current2 == null) {
-		 * 		return false;
-		 * }
-		 * 
-		 * return (_current1.value == current2.value) &&
-		 * 			equal(_current1.left, _current2.left) &&
-		 * 			equal(_current1.right, _current2.right);
-		 */
+		 if (_current1 == null && _current2 == null) {
+		 		return true;
+		 }
+		  
+		 if (_current1 == null || _current2 == null) {
+		  	return false;
+		 }
+		  
+		 return (_current1.value == _current2.value) &&
+		  		equalRecursive(_current1.left, _current2.left) &&
+		 		equalRecursive(_current1.right, _current2.right);
 	}
 	
 	/*

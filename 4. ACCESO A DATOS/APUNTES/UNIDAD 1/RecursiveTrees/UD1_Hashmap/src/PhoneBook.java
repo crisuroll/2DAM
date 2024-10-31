@@ -43,9 +43,10 @@ public class PhoneBook {
         if (this.contacts.isEmpty() == true) {
             System.out.println("No hay contactos");
         }else {
-            for(String a : contacts.keySet()) {
+            /*for(String a : contacts.keySet()) {
                 System.out.println(a + ": "  + contacts.get(a));
-            }
+            }*/
+        	this.contacts.forEach((key, value) -> System.out.println(key + " " + value));
         }
 
     }
