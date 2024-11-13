@@ -1,0 +1,23 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		ShoppingCart cart = new ShoppingCart();
+		
+		cart.addProduct("manzana", 3);
+		cart.addProduct("leche", 2);
+		cart.addProduct("pan", 1);
+		cart.displayCart();
+		
+		cart.updateQuantity("manzana", 5);
+		cart.removeProduct("pan");
+		cart.displayCart();
+		
+		cart.addProduct("manzana", 3);
+		cart.addProduct("manzana", 3);
+		cart.displayCart();
+
+	}
+
+}

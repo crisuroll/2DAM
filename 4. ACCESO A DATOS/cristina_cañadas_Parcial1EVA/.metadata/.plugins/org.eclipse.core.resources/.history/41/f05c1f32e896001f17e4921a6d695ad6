@@ -1,0 +1,19 @@
+
+public class BST {
+	
+	Node root;
+	
+	public void add(int _value) {
+		this.root = addRecursive(this.root, _value);
+	}
+	
+	private Node addRecursive(Node _current, int _value) {
+		if (_current == null) {
+			return new Node(_value);
+		}
+		
+		if (_value < _current.value) {
+			_current.left = addRecursive(_current.left, _value);
+		}
+	}
+}
