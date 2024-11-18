@@ -1,5 +1,3 @@
-package main;
-
 
 public class AdivinarNumero {
 	private final static int NUM_HILOS_CONCURSANTES = 4;

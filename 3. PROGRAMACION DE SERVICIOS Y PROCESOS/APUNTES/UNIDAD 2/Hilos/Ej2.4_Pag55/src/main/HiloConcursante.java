@@ -32,10 +32,11 @@ class HiloConcursante implements Runnable {
 			// Si es  1, se imprime que el hilo i-esimo ha acertado
 			// Aquí va un elseif
 			if (propuesta == 1) {
+				juegoTerminado = true;
 				System.out.println("El hilo " + this.id + " ha acertado el número oculto.");
 			} else if (propuesta == -1) {
-				System.out.println("Juego terminado. Otro hilo ha acertado.");
 				juegoTerminado = true;
+				System.out.println("Juego terminado. Otro hilo ha acertado.");
 			}
 		}
 		// Al salir del bucle, el hilo ha terminado. Asi que se imprime eso mismo
