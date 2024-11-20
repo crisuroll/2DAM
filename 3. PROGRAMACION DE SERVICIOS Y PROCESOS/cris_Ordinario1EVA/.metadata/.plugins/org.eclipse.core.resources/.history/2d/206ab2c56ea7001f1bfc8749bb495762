@@ -1,0 +1,14 @@
+
+public class Main {
+	private final static int NUM_HILOS = 8;
+	private final static int TOTAL = 100000;
+	private final static int PARTE = TOTAL/NUM_HILOS;
+	
+	public static void main(String[] args) {
+		Hilo[] hilos = new Hilo[8];
+		for (int i = 0; i <= NUM_HILOS; i++) {
+			hilos[i] = new Thread(new Hilo(i, Contador c, PARTE));
+		}
+	}
+
+}

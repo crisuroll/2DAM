@@ -1,0 +1,13 @@
+
+public class Hilo implements Runnable{
+
+	public Hilo(int id, int miCuenta, int miParte) {
+		
+	}
+	
+	@Override
+	public void run() {
+		
+		
+	}
+}

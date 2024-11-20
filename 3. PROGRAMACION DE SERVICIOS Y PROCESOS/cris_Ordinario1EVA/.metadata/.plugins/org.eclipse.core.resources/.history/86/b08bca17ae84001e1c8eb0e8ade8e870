@@ -1,0 +1,10 @@
+/**
+ * Clase A2.
+ * @author crisuroll
+ */
+public class A2 {
+	
+	private char miChar;
+	private A3 a;
+
+}

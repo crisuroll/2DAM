@@ -1,0 +1,51 @@
+
+public class Filosofo implements Runnable{
+	private final Tenedor tenedorIzquierdo;
+	private final Tenedor tenedorDerecho;
+	private final int id;
+	
+	public Filosofo(int id, Tenedor tenedorIzquierdo, Tenedor tenedorDerecho) {
+		this.id = id;
+		this.tenedorIzquierdo = tenedorIzquierdo;
+		this.tenedorDerecho = tenedorDerecho;
+	}
+	
+	private void realizarAccion(String accion) throws InterruptedException {
+		System.out.println("Filosofo " + id + " " + accion);
+		Thread.sleep((int) (Math.random() * 10000));
+	}
+	
+	@Override
+	public void run() {
+		int tD = tenedorDerecho.getId();
+		int tI = tenedorIzquierdo.getId();
+		while(true) {
+			if (tD == null) {
+				try {
+					realizarAccion("coge el tenedor izquierdo");
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			} else if (tenedorDerecho == null) {
+				try {
+					realizarAccion("coge el tenedor derecho");
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+			if ((tenedorIzquierdo != null) && tenedorDerecho != null) {
+				try {
+					realizarAccion("come");
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			} else {
+				try {
+					realizarAccion("está pensando");
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+}

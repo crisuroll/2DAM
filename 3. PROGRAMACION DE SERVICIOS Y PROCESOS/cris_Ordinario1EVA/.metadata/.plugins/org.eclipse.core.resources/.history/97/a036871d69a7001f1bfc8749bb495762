@@ -1,0 +1,8 @@
+
+public class Cuenta {
+	private int cuenta;
+	
+	public Cuenta(int miCuenta, int miParte) {
+		
+	}
+}

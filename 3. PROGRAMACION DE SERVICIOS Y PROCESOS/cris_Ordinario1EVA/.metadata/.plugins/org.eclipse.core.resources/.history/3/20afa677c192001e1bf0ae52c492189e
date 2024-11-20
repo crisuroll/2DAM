@@ -1,0 +1,14 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int array[] = {32, 80, 2, 8, 7, 9};
+		
+		for (int i = 0; array.length - 1; i++) {
+			
+		}
+
+	}
+
+}

@@ -1,0 +1,12 @@
+
+public class Filosofo implements Runnable{
+	private final Tenedor tenedorIzquierdo;
+	private final Tenedor tenedorDerecho;
+	private final int id;
+	
+	public Filosofo(int id, Tenedor tenedorIzquierdo, Tenedor tenedorDerecho) {
+		this.id = id;
+		this.tenedorIzquierdo = tenedorIzquierdo;
+		this.tenedorDerecho = tenedorDerecho;
+	}
+}
