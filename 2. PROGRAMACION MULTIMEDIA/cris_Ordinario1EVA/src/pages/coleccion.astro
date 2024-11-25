@@ -1,0 +1,27 @@
+---
+import { getCollection } from "astro:content"
+import Layout from "../layouts/Layout.astro"
+
+const cartas = await getCollection("cartas")
+---
+
+<Layout title="DIGIMON | Colección">
+    <div class="gap-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-flow-row p-10 text-pink-700">
+        {
+            cartas.map(carta => {
+                const { slug, data } = carta
+                const { nombre, hp, nivel, habilidad, fuerza, img, descripcion, valor } = data
+
+                return (     
+                        <div class="flex flex-col gap-4 border-[#FFCFB3] border-2 bg-[#ffecfd] dark:bg-[#A6AEBF] shadow-lg p-4 rounded-xl hover:scale-105 transition-transform duration-500">
+                            <p class="font-bold text-[#E78F81] text-3xl dark:text-[#E8BCB9]">{nombre}</p>
+                            <img class="w-full" src={`/${img}`} alt={nombre} />
+                            <button class="bg-[#FFCFB3] dark:bg-[#4B4376] px-4 py-2 rounded-md font-bold text-[#E78F81] dark:text-[#E8BCB9]">
+                                <a href={`/cartas/${slug}`} class="text-xl">VER MAS</a>
+                            </button>
+                        </div>
+                )
+            })
+        }
+    </div>
+</Layout>

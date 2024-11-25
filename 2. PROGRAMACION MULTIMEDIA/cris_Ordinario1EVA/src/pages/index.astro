@@ -1,0 +1,18 @@
+---
+import { getCollection } from "astro:content"
+import Layout from "../layouts/Layout.astro"
+import Button from "../components/Button.astro"
+import CartaFav from "../components/CartaFav.astro"
+
+const cartas = await getCollection("cartas")
+---
+
+<Layout title="DIGIMON">
+    <div class="p-4">
+        <p class="flex justify-center text-pink-700 text-xl dark:text-pink-300">¡Bienvenido a mi página de Digimon!</p>
+        <p class="p-4 text-justify dark:text-white">Tengo una gran colección de cartas que comencé desde muy corta edad. Estás aquí para poder ver las cartas más populares y aprender más sobre los Digimon.</p>
+        <CartaFav />
+        <Button />
+    </div>
+
+</Layout>

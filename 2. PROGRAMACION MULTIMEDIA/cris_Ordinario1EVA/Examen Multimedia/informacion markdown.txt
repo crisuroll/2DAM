@@ -1,0 +1,167 @@
+---
+nombre: Baalmon
+hp: 4500
+nivel: Campeón
+habilidad: Llama Oscura
+fuerza: 3200
+img: Baalmon.png
+descripcion: Un digimon misterioso envuelto en sombras, maestro de las artes oscuras y con un pasado enigmático.
+valor: 15 euros
+---
+
+**Baalmon**
+Baalmon es un digimon envuelto en un aura de misterio y poder. Se dice que fue entrenado por una antigua orden dedicada a las artes oscuras, lo que lo convirtió en un guerrero implacable y solitario. Aunque su apariencia tenebrosa puede causar miedo, Baalmon guarda un secreto: un pasado marcado por la traición y una búsqueda constante de redención. Sus habilidades en combate, como su mortal Llama Oscura, lo posicionan como un rival difícil de superar. Sin embargo, su conflicto interno lo impulsa a cuestionar si el poder que posee está destinado a proteger o a destruir.
+
+---
+nombre: Beelzemon
+hp: 5500
+nivel: Mega
+habilidad: Disparo Infernal
+fuerza: 4800
+img: Beelzemon.png
+descripcion: Un digimon demonio de alto nivel que combina velocidad y poder, armado con sus pistolas gemelas.
+valor: 25 euros
+---
+
+**Beelzemon**
+Beelzemon es uno de los digimons más temidos del mundo digital, no solo por su increíble poder, sino también por su actitud rebelde y su impresionante presencia. Es conocido por sus habilidades de combate que combinan velocidad, fuerza y una precisión letal con sus pistolas gemelas. Aunque suele trabajar solo, hay destellos de bondad en su alma, lo que sugiere que no es completamente consumido por su naturaleza demoníaca. A menudo se lo ve viajando en busca de desafíos, enfrentándose a cualquiera que se atreva a interponerse en su camino. Su verdadero deseo podría ser encontrar algo o alguien digno de su lealtad.
+
+---
+nombre: Etemon
+hp: 4000
+nivel: Ultra
+habilidad: Solo de Rock Oscuro
+fuerza: 3500
+img: Etemon.png
+descripcion: El rey del rock entre los digimon, utiliza su música para desorientar a sus enemigos.
+valor: 12 euros
+---
+
+**Etemon**
+Etemon es el digimon más extravagante y carismático, siempre dispuesto a brillar bajo los focos. Proclamado a sí mismo como el "Rey del Rock", utiliza su poderosa música para desorientar y dominar a sus enemigos. Su habilidad Solo de Rock Oscuro no solo inflige daño, sino que también reduce las capacidades de aquellos que lo escuchan. Aunque su personalidad arrogante puede ser irritante para algunos, no se puede negar que Etemon tiene una habilidad natural para liderar y controlar situaciones. Su carácter despreocupado esconde una astucia que lo convierte en un adversario sorprendente.
+
+---
+nombre: Flamedramon
+hp: 4200
+nivel: Campeón
+habilidad: Llama de Fuego
+fuerza: 3600
+img: Flamedramon.png
+descripcion: Un digimon revestido de armadura ígnea, capaz de manipular el fuego a su antojo.
+valor: 18 euros
+---
+
+**Flamedramon**
+Flamedramon es un guerrero nacido del fuego, cubierto con una armadura ígnea que simboliza su coraje y determinación. Este digimon no solo destaca por su impresionante habilidad para controlar las llamas, sino también por su fortaleza física y su velocidad. Es un líder nato, dispuesto a arriesgarlo todo por sus aliados. Flamedramon es el reflejo perfecto de la valentía, enfrentándose sin dudar a enemigos mucho más grandes o fuertes que él. Su ataque Llama de Fuego no solo es devastador, sino también un recordatorio de su espíritu ardiente.
+
+---
+nombre: Gargomon
+hp: 3800
+nivel: Campeón
+habilidad: Disparos Locos
+fuerza: 3400
+img: Gargomon.png
+descripcion: Un digimon conejo con armas en lugar de manos, siempre listo para la acción.
+valor: 10 euros
+---
+
+**Gargomon**
+Con su peculiar diseño que mezcla un conejo con armamento pesado, Gargomon es una fuerza caótica en cualquier batalla. Es conocido por su actitud despreocupada y su habilidad para enfrentarse a cualquier amenaza con una sonrisa en el rostro. Sus armas en forma de brazos son capaces de disparar con precisión o devastar grandes áreas, lo que lo hace muy versátil en combate. A pesar de su energía desbordante, Gargomon también tiene un lado amable y protector, especialmente hacia aquellos que considera sus amigos. Su enfoque despreocupado oculta su ingenio estratégico, lo que lo convierte en una sorpresa para sus enemigos.
+
+---
+nombre: Garudamon
+hp: 5000
+nivel: Ultra
+habilidad: Ala Sagrada
+fuerza: 4000
+img: Garudamon.png
+descripcion: Un majestuoso digimon pájaro que representa la protección y la justicia.
+valor: 20 euros
+---
+
+**Garudamon**
+Garudamon es un majestuoso digimon con apariencia de ave, conocido por su capacidad de volar a alturas imposibles y su poderosa conexión con el cielo. Es un símbolo de libertad, justicia y valentía, protegiendo a los más débiles con un fervor inquebrantable. Su habilidad Ala Sagrada no solo inflige daño, sino que también purifica todo a su alrededor, eliminando rastros de oscuridad. Garudamon tiene un aura noble que inspira respeto y confianza en sus aliados, mientras que su imponente presencia intimida a cualquier enemigo que se atreva a enfrentarlo. Es un verdadero protector del mundo digital.
+
+---
+nombre: Garurumon
+hp: 3700
+nivel: Campeón
+habilidad: Llama Plateada
+fuerza: 3300
+img: Garurumon.png
+descripcion: Un lobo digimon veloz y feroz, con una melena plateada que brilla en la oscuridad.
+valor: 14 euros
+---
+
+**Garurumon**
+Garurumon es un digimon con la apariencia de un lobo, famoso por su velocidad y su ferocidad en combate. Su melena plateada brilla como un faro en la oscuridad, un símbolo de su pureza y fuerza interior. Aunque puede parecer intimidante, Garurumon es profundamente leal y protector hacia sus amigos. Su ataque Llama Plateada combina su rapidez y su poder, permitiéndole derrotar enemigos antes de que puedan reaccionar. A pesar de su naturaleza feroz, hay una nobleza en Garurumon que lo convierte en un aliado imprescindible para quienes luchan por la justicia.
+
+---
+nombre: Gomamon
+hp: 2500
+nivel: Novato
+habilidad: Marcha de los Peces
+fuerza: 2000
+img: Gomamon.png
+descripcion: Un alegre digimon marino que puede convocar a sus amigos del océano para ayudar en batalla.
+valor: 8 euros
+---
+
+**Gomamon**
+Gomamon es un digimon marino que irradia alegría y optimismo, incluso en las situaciones más difíciles. Aunque su tamaño puede parecer modesto, Gomamon tiene una habilidad única: la capacidad de convocar a sus aliados marinos con su Marcha de los Peces, permitiéndole cambiar el curso de cualquier batalla. Este digimon tiene una personalidad amigable y curiosa, lo que lo convierte en un compañero ideal para explorar tanto el océano como la tierra. Bajo su apariencia juguetona, Gomamon es valiente y está dispuesto a enfrentarse a cualquier desafío para proteger a sus amigos.
+
+---
+nombre: HolyAngemon
+hp: 5300
+nivel: Ultra
+habilidad: Excalibur
+fuerza: 4500
+img: HolyAngemon.png
+descripcion: Un digimon ángel con una espada sagrada, defensor de la luz y la justicia.
+valor: 22 euros
+---
+
+**HolyAngemon**
+HolyAngemon es un ser celestial, un protector del equilibrio y la justicia en el mundo digital. Con su espada sagrada Excalibur, tiene el poder de cortar incluso las fuerzas más oscuras, purificando todo a su paso. Este digimon no solo es fuerte físicamente, sino también en espíritu, sirviendo como un faro de esperanza para aquellos que luchan contra la oscuridad. HolyAngemon tiene un carácter noble y compasivo, siempre dispuesto a ayudar a quienes lo necesitan. Su presencia inspira confianza, y su habilidad para liderar lo convierte en un pilar fundamental en cualquier batalla.
+
+---
+nombre: Paildramon
+hp: 4800
+nivel: Ultra
+habilidad: Destructor Desesperado
+fuerza: 4200
+img: Paildramon.png
+descripcion: Resultado de la digievolución ADN, combina fuerza y estrategia en combate.
+valor: 19 euros
+---
+
+**Paildramon**
+Paildramon es la fusión perfecta de fuerza y estrategia, resultado de la unión de dos digimons mediante la digievolución ADN. Es un guerrero equilibrado que combina habilidades ofensivas y defensivas, lo que lo hace destacar en combates de todo tipo. Su habilidad Destructor Desesperado puede devastar a múltiples enemigos con un solo ataque, mostrando la inmensidad de su poder. A pesar de su apariencia imponente, Paildramon es un estratega cuidadoso, utilizando su inteligencia para superar a oponentes más poderosos. Representa la importancia de la cooperación y el trabajo en equipo.
+
+---
+nombre: Piyomon
+hp: 2600
+nivel: Novato
+habilidad: Espiral Mágica
+fuerza: 2100
+img: Piyomon.png
+descripcion: Un adorable digimon pájaro que anhela volar alto y proteger a sus amigos.
+valor: 7 euros
+---
+
+**Piyomon**
+Piyomon es un digimon pájaro lleno de energía y determinación. Aunque todavía es joven y está en proceso de descubrir todo su potencial, ya muestra una gran valentía al enfrentarse a adversarios más grandes y fuertes que él. Su habilidad Espiral Mágica es sorprendentemente efectiva, mostrando que incluso los más pequeños pueden causar un gran impacto. Piyomon tiene un profundo deseo de proteger a sus amigos, y su espíritu nunca se quiebra, incluso en los momentos más oscuros. Este digimon es un recordatorio de que la fuerza no siempre se mide en tamaño o poder, sino en corazón.
+
+---
+nombre: Wargreymon
+hp: 6000
+nivel: Mega
+habilidad: Terra Fuerza
+fuerza: 5000
+img: Wargreymon.png
+descripcion: Un poderoso digimon guerrero con armadura de cromo digizoid y un corazón valiente.
+valor: 30 euros
+---
+
+**Wargreymon**
+Wargreymon es el epítome de la fuerza y el coraje en el mundo digital. Su armadura, hecha de cromo digizoid, le otorga una resistencia casi impenetrable, mientras que su ataque Terra Fuerza es una de las habilidades más devastadoras jamás vistas. Este digimon no solo es un guerrero, sino también un líder nato, guiando a sus aliados con determinación y valentía. Su presencia en la batalla es inspiradora, demostrando que con determinación y un propósito claro, cualquier obstáculo puede ser superado. Wargreymon lucha no solo por la victoria, sino por la protección de todo aquello que ama.

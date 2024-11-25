@@ -1,0 +1,108 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from '../../layouts/Layout.astro';
+import Button from "../../components/Button.astro";
+import Comprar from "../../components/Comprar.astro";
+
+export async function getStaticPaths() {
+    const cartas = await getCollection("cartas");
+
+    return cartas.map((carta) => ({
+        params: { id: carta.slug },
+        props: { carta }
+    }));
+}
+
+const { carta } = Astro.props;
+const { data, slug } = carta;
+const { nombre, hp, nivel, habilidad, fuerza, img, descripcion, valor } = data;
+
+const { Content } = await render(carta);
+---
+
+<Layout title={nombre}>
+        <main>
+        <div class="gap-10 grid grid-cols-1 md:grid-cols-2 grid-flow-row p-10 text-pink-700">
+            <div class="flex flex-col justify-center gap-4 border-[#FFCFB3] border-2 bg-[#ffecfd] shadow-lg p-4 rounded-xl">
+                <img class="w-64 h-96" src={`/${img}`} alt={nombre} />
+            </div>
+            <div class="flex flex-col gap-4 border-[#FFCFB3] border-2 bg-[#ffecfd] shadow-md p-10 rounded-xl">
+                <h1 transition:name={`title-${slug}`} class="mb-4 font-bold text-4xl">{nombre}</h1>
+                <h1>
+                    <div class="inline-flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size" viewBox="0 0 24 24" fill="none" width="24" height="24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" x-bind:stroke-width="stroke" stroke="currentColor">
+                            <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path>
+                          </svg>
+                        <p>HP: {hp}</p>
+                    </div>
+                    <div class="inline-flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+                            <path d="M6 5v-2"></path>
+                            <path d="M18 3v2"></path>
+                            <path d="M6.5 12h3"></path>
+                            <path d="M14.5 12h3"></path>
+                            <path d="M16 10.5v3"></path>
+                          </svg>
+                        <p>Nivel: {nivel}</p>
+                    </div>
+                    <div class="inline-flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                            <path d="M10 19a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z"></path>
+                            <path d="M18 5a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z"></path>
+                            <path d="M10 5a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z"></path>
+                            <path d="M6 12a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z"></path>
+                            <path d="M18 19a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z"></path>
+                            <path d="M14 12a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z"></path>
+                            <path d="M22 12a2 2 0 1 0 -4 0a2 2 0 0 0 4 0z"></path>
+                            <path d="M6 12h4"></path>
+                            <path d="M14 12h4"></path>
+                            <path d="M15 7l-2 3"></path>
+                            <path d="M9 7l2 3"></path>
+                            <path d="M11 14l-2 3"></path>
+                            <path d="M13 14l2 3"></path>
+                            <path d="M10 5h4"></path>
+                            <path d="M10 19h4"></path>
+                            <path d="M17 17l2 -3"></path>
+                            <path d="M19 10l-2 -3"></path>
+                            <path d="M7 7l-2 3"></path>
+                            <path d="M5 14l2 3"></path>
+                          </svg>
+                        <p>Habilidad: {habilidad}</p>
+                    </div>
+                    <div class="inline-flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                            <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                            <path d="M12 7a5 5 0 1 0 5 5"></path>
+                            <path d="M13 3.055a9 9 0 1 0 7.941 7.945"></path>
+                            <path d="M15 6v3h3l3 -3h-3v-3z"></path>
+                            <path d="M15 9l-3 3"></path>
+                          </svg>
+                        <p>Fuerza: {fuerza}</p>
+                    </div>
+                    <div class="inline-flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" x-bind:width="size" x-bind:height="size" viewBox="0 0 24 24" fill="none" stroke="currentColor" x-bind:stroke-width="stroke" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                            <path d="M14.401 8c-.669 -.628 -1.5 -1 -2.401 -1c-2.21 0 -4 2.239 -4 5s1.79 5 4 5c.9 0 1.731 -.372 2.4 -1"></path>
+                            <path d="M7 10.5h4"></path>
+                            <path d="M7 13.5h4"></path>
+                          </svg>
+                        <p>Valor: {valor}</p>
+                    </div>
+                <div>
+                    <Content />
+                    <div class="inline-flex gap-5 pt-10">
+                        <Button />
+                        <Comprar />
+                    </div>
+                    
+                </div>
+            </div>
+
+
+        </div>   
+
+
+        </main>
+    </div>
+</Layout>
