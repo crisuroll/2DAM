@@ -1,0 +1,4 @@
+
+interface Saludo {
+	void saludar();
+}
