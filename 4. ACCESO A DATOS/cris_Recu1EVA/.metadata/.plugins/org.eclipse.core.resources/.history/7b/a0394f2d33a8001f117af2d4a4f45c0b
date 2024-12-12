@@ -1,0 +1,13 @@
+package main;
+
+public class Cuenta {
+	String nTitular;
+	int nCuenta, saldo;
+	
+	public Cuenta(String nT, int nC, int s) {
+		this.nTitular = nT;
+		this.nCuenta = nC;
+		this.saldo = s;
+	}
+	
+}

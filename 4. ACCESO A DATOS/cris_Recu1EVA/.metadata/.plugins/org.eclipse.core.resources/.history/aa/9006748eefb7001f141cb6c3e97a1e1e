@@ -1,0 +1,23 @@
+package ej2;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Queue mazoJugador1 = new LinkedList<Integer>();
+		Queue mazoJugador2 = new LinkedList<Integer>();
+		
+		mazoJugador1.add(2);
+		mazoJugador1.add(4);
+		mazoJugador1.add(6);
+		mazoJugador1.add(8);
+		mazoJugador1.add(10);
+		
+		mazoJugador2.add(1);
+
+	}
+
+}

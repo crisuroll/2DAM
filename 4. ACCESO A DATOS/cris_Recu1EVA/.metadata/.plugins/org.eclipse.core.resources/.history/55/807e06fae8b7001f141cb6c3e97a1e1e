@@ -1,0 +1,20 @@
+package ej1;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Inventario {
+	private Map<String, Producto> productos;
+	
+	public Inventario() {
+		this.productos = new HashMap<String, Producto>();
+	}
+	
+	public void agregarProducto(Producto producto) {
+		try {
+			if (this.productos.containsKey(productos))
+		} catch (ProductoDuplicadoException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+}

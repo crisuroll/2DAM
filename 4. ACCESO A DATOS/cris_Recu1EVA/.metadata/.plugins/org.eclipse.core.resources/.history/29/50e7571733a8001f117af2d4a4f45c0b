@@ -1,0 +1,7 @@
+package main;
+
+public class Cuenta {
+	String nTitular;
+	int nCuenta, saldo;
+	
+}

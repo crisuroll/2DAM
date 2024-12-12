@@ -1,0 +1,25 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		int acu = 0;
+		int array[] = {32, 80, 2, 8, 7, 9};
+		
+		for  (int h = 0; h < array.length; h++) {
+			System.out.print(array[h] + " ");
+		}
+		
+		for (int i = 0; i < array.length - 1; i++) {
+			for (int j = 0; j < array.length -1; j++) {
+				if (array[j] > array[j + 1]) {
+					acu = array[j + 1];
+					array[j + 1] = array[j];
+					array[j + 1] = acu;
+				}
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,29 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Queue<String> q1 = new LinkedList<>();
+		Queue<String> q2 = new LinkedList<>();
+		
+		q1.add("Negro");
+		q1.add("Rojo");
+		q1.add("Verde");
+		q1.add("Blanco");
+		
+		q2.add("Negro");
+		q2.add("Naranja");
+		q2.add("Rosa");
+		q2.add("Rojo");
+		
+		for (int i = 0, i <= q2.size(), i++) {
+			
+		}
+		q1.contains(q2.element());
+		
+
+	}
+
+}

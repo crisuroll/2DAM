@@ -1,0 +1,34 @@
+package main;
+
+import java.io.IOException;
+
+public class Cuenta {
+	int nCuenta, saldo;
+	
+	public Cuenta(int nC, int s) {
+		this.nCuenta = nC;
+		this.saldo = s;
+	}
+	
+	public int getSaldo() {
+		return this.saldo;
+	}
+	
+	public void sumSaldo(int n) throws ImporteInvalidoException{
+		
+			if(n < 0) {
+				throw new ImporteInvalidoException("Error: Importe inválido");
+			}else {
+				this.saldo += n;
+			}
+	}
+	
+	public void resSaldo(int n) throws FondosInsuficientesException{
+		if((this.saldo - n) < 0) {
+			throw new FondosInsuficientesException("Error: Importe inválido");
+		}else {
+			this.saldo -= n;
+		}
+	}
+	
+}

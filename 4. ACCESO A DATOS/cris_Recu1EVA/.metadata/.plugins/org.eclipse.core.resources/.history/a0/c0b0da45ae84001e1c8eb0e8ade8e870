@@ -1,0 +1,22 @@
+/**
+ * Clase A2.
+ * @author crisuroll
+ */
+public class A2 {
+	
+	private char miChar;
+	private A3 a;
+	
+	public A2 (char miChar, A3 a) {
+		this.miChar = miChar;
+		this.a = a;
+	}
+	
+	public boolean equals (A2 a) {
+		return (
+			this.miChar == a.miChar &&
+			this.a == a.a;
+			)
+	}
+
+}

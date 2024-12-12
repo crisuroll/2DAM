@@ -1,0 +1,37 @@
+package ej1;
+
+public class Producto {
+	private String nombre;
+	private String cantidad;
+	private String precio;
+	
+	public Producto(String nombre, String cantidad, String precio) {
+		this.nombre = nombre;
+		this.cantidad = cantidad;
+		this.precio = precio;
+	}
+	
+	public String getNombre() {
+		return this.nombre;
+	}
+	
+	public String getCantidad() {
+		return this.cantidad;
+	}
+	
+	public String getPrecio() {
+		return this.precio;
+	}
+	
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	
+	public void setCantidad(String cantidad) {
+		this.cantidad = cantidad;
+	}
+	
+	public void setPrecio(String precio) {
+		this.precio = precio;
+	}
+}

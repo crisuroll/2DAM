@@ -1,0 +1,9 @@
+package ej1;
+
+public class InvalidLineFormatException extends Exception {
+	
+	public void checkLine(String _line, int num) {
+		System.out.println("Error: Formato inválido en la línea " + num + ": " + _line);
+	}
+	
+}

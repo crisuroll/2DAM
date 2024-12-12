@@ -1,0 +1,5 @@
+import java.nio.file.Path;
+
+public class ArchivoTemporal {
+	Path p = Path.of("temporal.txt");
+}

@@ -1,0 +1,33 @@
+package ejemplo1;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
+import java.util.Scanner;
+
+public class EjemploBufferedWriter_1 {
+    public static void main(String[] args) {
+        String nombreArchivo = "ejemploBufferedWriter.txt";
+        String contenido = "Este es un ejemplo de escritura usando la clase BufferedWriter.";
+        Path path = Path.of(nombreArchivo);
+
+        try (BufferedWriter escritor = new BufferedWriter(new FileWriter(nombreArchivo, StandardOpenOption.APPEND))) {
+            escritor.write(contenido);
+            System.out.println("Se ha escrito en el archivo usando BufferedWriter.");
+        } catch (IOException e) {
+            System.out.println("Ocurrió un error.");
+            e.printStackTrace();
+        }
+        
+        try(Scanner sc = new Scanner(path)) {
+        	while (sc.hasNextLine()) {
+        		String line = sc.nextLine();
+        		System.out.println(line);
+        	}
+        } catch (IOException e) {
+        	
+        }
+    }
+}

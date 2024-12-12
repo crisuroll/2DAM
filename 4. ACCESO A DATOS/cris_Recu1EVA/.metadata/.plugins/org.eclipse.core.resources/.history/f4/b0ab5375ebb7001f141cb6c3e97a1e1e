@@ -1,0 +1,22 @@
+package ej1;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int op = 0;
+		
+		System.out.println("1. Agregar producto\n2. Retirar producto\n3. Consultar producto\n4. Mostrar Inventario\n5. Salir");
+		System.out.println("\nElige una opción: ");
+		op = sc.nextInt();
+		
+		while (op != 5) {
+			
+		}
+
+	}
+
+}

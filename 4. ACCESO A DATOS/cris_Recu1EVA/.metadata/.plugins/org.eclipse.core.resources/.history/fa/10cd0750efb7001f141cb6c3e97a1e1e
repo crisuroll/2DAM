@@ -1,0 +1,17 @@
+package ej2;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Queue mazoJugador1 = new LinkedList<>();
+		Queue mazoJugador2 = new LinkedList<>();
+		
+		mazoJugador1 = new int[] {2, 4, 6, 8, 10};
+
+	}
+
+}

@@ -1,0 +1,1 @@
+Este es un ejemplo usando FileWriter con PrintWriter.2

@@ -1,0 +1,6 @@
+
+public class BST {
+	public void add(int value) {
+		
+	}
+}

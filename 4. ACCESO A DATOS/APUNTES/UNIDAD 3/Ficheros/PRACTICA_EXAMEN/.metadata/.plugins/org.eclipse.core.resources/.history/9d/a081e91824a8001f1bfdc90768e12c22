@@ -1,0 +1,16 @@
+package ejemplos;
+
+import java.io.File;
+
+public class ficheros {
+
+	public static void main(String[] args) {
+		File archivo = new File("ficheritos.txt");
+	}
+	
+	try {
+		
+	} catch (IOException e) {
+		
+	}
+}

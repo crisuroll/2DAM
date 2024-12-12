@@ -1,0 +1,26 @@
+package ejemplos;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class ficheros {
+
+	public static void main(String[] args) {
+		File archivo = new File("ficheritos.txt");
+		try {
+			if(archivo.createNewFile()) {
+				System.out.println("Archivo creado.");
+			} else {
+				System.out.println("Archivo ya existente.");
+			}
+			
+			FileWriter escritor = new FileWriter(archivo);
+			escritor.write("Estoy escribiendo");
+			
+		} catch (IOException e) {
+			
+		}
+	}
+	
+}

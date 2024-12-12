@@ -1,0 +1,25 @@
+package ejemplos;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+public class EjercicioPath {
+
+	public static void main(String[] args) {
+		String archivo = "path.txt";
+		Path path = Path.of(archivo);
+		
+		try {
+			if(Files.notExists(path)) {
+				Files.createFile(path);
+				System.out.println("Archivo creado " );
+			}
+		} catch (IOException e) {
+			
+		}
+
+
+	}
+
+}

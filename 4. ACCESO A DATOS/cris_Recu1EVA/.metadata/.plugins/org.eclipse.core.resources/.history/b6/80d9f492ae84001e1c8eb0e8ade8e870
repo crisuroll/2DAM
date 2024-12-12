@@ -1,0 +1,11 @@
+/**
+ * Clase A1.
+ * @author crisuroll
+ */
+public class A1 {
+	
+	private int num;
+	private A2 obj1;
+	private A3 obj2;
+
+}

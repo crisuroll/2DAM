@@ -1,0 +1,9 @@
+package ejemplos;
+
+public class ficheros {
+
+	public static void main(String[] args) {
+		File archivo = new File("ficheritos.txt");
+	}
+	
+}

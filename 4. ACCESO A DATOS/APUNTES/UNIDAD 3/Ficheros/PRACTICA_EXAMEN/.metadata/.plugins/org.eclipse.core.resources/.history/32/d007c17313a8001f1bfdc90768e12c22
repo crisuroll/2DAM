@@ -1,0 +1,13 @@
+package ejemplos;
+
+import java.nio.file.Path;
+
+public class EjercicioPath {
+
+	public static void main(String[] args) {
+		String archivo = "path.txt";
+		Path.of(archivo);
+
+	}
+
+}

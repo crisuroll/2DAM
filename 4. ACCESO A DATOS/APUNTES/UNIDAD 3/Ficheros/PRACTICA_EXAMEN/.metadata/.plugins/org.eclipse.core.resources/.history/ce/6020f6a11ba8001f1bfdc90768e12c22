@@ -1,0 +1,16 @@
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+
+public class ArchivoTemporal {
+	public static void main(String[] args) {
+		try {
+			Path p = Files.createTempFile("temporal", ".txt");
+			Files.writeString(p, "hola soy un archivo temporal", );
+		} catch (IOException e) {
+			
+		}
+		
+	}
+
+}

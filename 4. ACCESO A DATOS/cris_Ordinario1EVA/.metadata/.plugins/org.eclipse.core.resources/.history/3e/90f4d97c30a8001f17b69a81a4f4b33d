@@ -1,0 +1,9 @@
+package ej1;
+
+public class InvalidLineFormatException extends Exception {
+	
+	public void checkLine(String _line) {
+		if (_line.matches("^[a-zA-Z0-9\\s]+$"))
+	}
+	
+}

@@ -1,0 +1,12 @@
+package ej1;
+
+public class InvalidLineFormatException extends Exception {
+	
+	public void checkLine(String _line, int num) {
+		if (!_line.matches("^[a-zA-Z0-9\\s]+$")) {
+			System.out.println("Línea válida: " + _line);
+			System.out.println("Error: Formato inválido en la línea " + num + ": " + _line);
+		}
+	}
+	
+}

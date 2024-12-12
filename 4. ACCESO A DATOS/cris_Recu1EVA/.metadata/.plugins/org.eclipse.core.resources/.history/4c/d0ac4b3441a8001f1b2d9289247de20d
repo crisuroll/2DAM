@@ -1,0 +1,47 @@
+package main;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOError;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String nombre = "fichero";
+		Path p = Path.of(nombre);
+		File f = new File(nombre);
+		
+		try {
+			
+			//------------------------------------------------------------------
+			List<String> lista = Files.readAllLines(p);
+			for (String linea : lista) {
+				System.out.println(linea);
+				if(!linea.matches("^[a-zA-Z0-9\\s]+$")) {
+					throw new InvalidLineFormatException("Error: Formato invalido");
+				}
+				
+			}
+					
+		} catch (InvalidLineFormatException e) {
+			e.getMessage();
+		}
+		
+		try {
+			if(f.length() > 100) {
+				throw new FileTooLargeException("Error: Archivo muy pesado");
+			}
+		}catch(FileTooLargeException e){
+			e.getMessage();
+		}
+
+	}
+
+}

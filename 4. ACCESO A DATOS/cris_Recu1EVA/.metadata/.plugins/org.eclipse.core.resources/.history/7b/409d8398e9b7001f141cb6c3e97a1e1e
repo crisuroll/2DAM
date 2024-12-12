@@ -1,0 +1,32 @@
+package ej1;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Inventario {
+	private Map<String, Producto> productos;
+	
+	public Inventario() {
+		this.productos = new HashMap<String, Producto>();
+	}
+	
+	public void agregarProducto(Producto producto) {
+		try {
+			if (this.productos.containsKey(producto.getId())) {
+				throw new ProductoDuplicadoException("Error: El producto con ID " + producto.getId() + " ya existe en el inventario.");
+			} else {
+				this.productos.put(producto.getId(), producto);
+			}
+		} catch (ProductoDuplicadoException e) {
+			System.out.println(e.getMessage());
+		}
+	}
+	
+	public void retirarProducto(String id, int cantidad) {
+		try {
+			
+		} catch (CantidadInsuficienteException e) {
+			
+		}
+	}
+}

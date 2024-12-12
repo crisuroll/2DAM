@@ -1,0 +1,38 @@
+package ej1;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Inventario inventario = new Inventario();
+		Scanner sc = new Scanner(System.in);
+		int op = 0;
+		
+		/*System.out.println("1. Agregar producto\n2. Retirar producto\n3. Consultar producto\n4. Mostrar Inventario\n5. Salir");
+		System.out.println("\nElige una opción: ");
+		op = sc.nextInt();
+		
+		while (op != 5) {
+			switch(op) {
+			case 1:
+				
+				break;
+			case 2:
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			case 5: 
+				break;
+			}
+
+		}*/
+		
+		inventario.agregarProducto(new Producto("001", "Laptop", 10, 1500.0));
+
+	}
+
+}

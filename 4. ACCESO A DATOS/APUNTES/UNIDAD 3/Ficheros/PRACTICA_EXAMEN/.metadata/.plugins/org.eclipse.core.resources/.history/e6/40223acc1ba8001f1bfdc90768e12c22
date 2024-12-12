@@ -1,0 +1,19 @@
+package actividades;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
+
+public class ArchivoTemporal {
+	public static void main(String[] args) {
+		try {
+			Path p = Files.createTempFile("temporal", ".txt");
+			Files.writeString(p, "hola soy un archivo temporal", StandardOpenOption.DELETE_ON_CLOSE);
+		} catch (IOException e) {
+			
+		}
+		
+	}
+
+}

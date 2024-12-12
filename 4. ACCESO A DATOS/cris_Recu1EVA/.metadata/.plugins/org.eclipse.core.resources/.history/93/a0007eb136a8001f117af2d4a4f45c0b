@@ -1,0 +1,75 @@
+package main;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) throws ImporteInvalidoException, FondosInsuficientesException {
+		String nTitular1, nTitular2;
+		int nCuenta1, nCuenta2;
+		int saldo1, saldo2;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("=== Configuración de la Cuenta 1 ===");
+		System.out.println("Ingresa el nombre del titular: ");
+		nTitular1 = sc.next();
+		System.out.println("Ingrese el numero de cuenta: ");
+		nCuenta1 = sc.nextInt();
+		System.out.println("Ingrese el saldo inicial: ");
+		saldo1 = sc.nextInt();
+		
+		System.out.println("=== Configuración de la Cuenta 2 ===");
+		System.out.println("Ingresa el nombre del titular: ");
+		nTitular2 = sc.next();
+		System.out.println("Ingrese el numero de cuenta: ");
+		nCuenta2 = sc.nextInt();
+		System.out.println("Ingrese el saldo inicial: ");
+		saldo2 = sc.nextInt();
+		
+		Cuenta c1 = new Cuenta(nCuenta1, saldo1);
+		Cuenta c2 = new Cuenta(nCuenta2, saldo2);
+		
+		System.out.println("Saldo inicial de la cuenta de " + nTitular1 + ": " + c1.getSaldo());
+		System.out.println("Saldo inicial de la cuenta de " + nTitular2 + ": " + c2.getSaldo());
+		
+		int op = 0;
+		int cant = 0;
+		do {
+			System.out.println("==Menu de transferencias==");
+			System.out.println("1: Transferir de la cuenta de " + nTitular1 + " a la cuenta de " + nTitular2);
+			System.out.println("2: Transferir de la cuenta de " + nTitular2 + " a la cuenta de " + nTitular1);
+			System.out.println("\nSeleccione una opción");
+			op = sc.nextInt();
+			if(op == 1) {
+				System.out.println("Ingrese el importe a transferir");
+				cant = sc.nextInt();
+				try {
+					if((c1.getSaldo() - cant) < 0) {
+						throw new FondosInsuficientesException("Error: saldo insuficiente para realizar el retiro");
+					}
+				}catch(IOException e) {
+					e.getMessage();
+				}
+				c2.sumSaldo(cant);
+				c1.resSaldo(cant);
+				System.out.println("\nTransfiriendo " + cant + " euros de la cuenta de " + nTitular2 + " a la cuenta de " + nTitular1);
+				System.out.println("Saldo de la cuenta de " + nTitular1 + " despues de la transferencia: " + c1.getSaldo());
+				System.out.println("Saldo de la cuenta de " + nTitular2 + " despues de la transferencia: " + c2.getSaldo());
+			}else if(op == 2) {
+				System.out.println("Ingrese el importe a transferir");
+				cant = sc.nextInt();
+				
+				if((c2.getSaldo() - cant) < 0) {
+					throw new FondosInsuficientesException("Error: saldo insuficiente para realizar el retiro");
+				}
+				c2.resSaldo(cant);
+				c1.resSaldo(cant);
+				System.out.println("\nTransfiriendo " + cant + " euros de la cuenta de " + nTitular1 + " a la cuenta de " + nTitular2);
+				System.out.println("Saldo de la cuenta de " + nTitular1 + " despues de la transferencia: " + c1.getSaldo());
+				System.out.println("Saldo de la cuenta de " + nTitular2 + " despues de la transferencia: " + c2.getSaldo());
+			}
+		}while(op != 0);
+	}
+
+}

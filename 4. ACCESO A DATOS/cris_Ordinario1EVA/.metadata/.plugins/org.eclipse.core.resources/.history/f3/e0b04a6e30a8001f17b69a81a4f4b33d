@@ -1,0 +1,9 @@
+package ej1;
+
+public class InvalidLineFormatException extends Exception {
+	
+	public void checkLine() {
+		
+	}
+	
+}

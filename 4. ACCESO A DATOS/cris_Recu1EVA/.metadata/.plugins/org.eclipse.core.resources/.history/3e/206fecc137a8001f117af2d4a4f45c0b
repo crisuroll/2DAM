@@ -1,0 +1,23 @@
+package main;
+
+public class Cuenta {
+	int nCuenta, saldo;
+	
+	public Cuenta(int nC, int s) {
+		this.nCuenta = nC;
+		this.saldo = s;
+	}
+	
+	public int getSaldo() {
+		return this.saldo;
+	}
+	
+	public void sumSaldo(int n) {
+		this.saldo += n;
+	}
+	
+	public void resSaldo(int n) throws FondosInsuficientesException{
+		this.saldo -= n;
+	}
+	
+}

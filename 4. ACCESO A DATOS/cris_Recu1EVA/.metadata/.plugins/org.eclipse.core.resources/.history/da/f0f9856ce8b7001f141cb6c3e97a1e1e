@@ -1,0 +1,11 @@
+package ej1;
+
+import java.util.Map;
+
+public class Inventario {
+	private Map<String, Producto> productos;
+	
+	public Inventario() {
+		
+	}
+}

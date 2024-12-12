@@ -1,0 +1,35 @@
+package main;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOError;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String nombre = "fichero";
+		Path p = Path.of(nombre);
+	
+		try {
+			FileReader f = new FileReader(nombre);
+			//------------------------------------------------------------------
+			List<String> lista = Files.readAllLines(p);
+			for (String linea : lista) {
+				System.out.println(linea);
+			}
+			
+			if(File.le)
+			
+		} catch (IOException e) {
+			e.getMessage();
+		}
+
+	}
+
+}

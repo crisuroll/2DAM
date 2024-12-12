@@ -1,0 +1,19 @@
+package actividades;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
+
+/**
+ * Tarea: ¿Qué hace el ejemplo de la clase CrearNuevoConCreateNew? ¿Qué pasará al ejecutarlo dos veces? 
+ * Busca más información sobre la palabra reservada intanceof (línea 19). Además, fíjate en que aquí 
+ * controlamos la excepción a la que hacíamos mención hace algunas diapositivas en el 
+ * punto Manejo de excepciones.
+ */
+public class CrearNuevoConCreateNew {
+    public static void main(String[] args) {
+    	Path p = Paths.get("ficheroNEW.txt");
+    }
+}
